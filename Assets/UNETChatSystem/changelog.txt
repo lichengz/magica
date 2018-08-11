@@ -1,0 +1,9 @@
+new in 1.1
+ - Chat System allows direct adding/editing of Channels in the Editor. Simply set the number of desired channels, name them, and give them a channel (uint), and a Color.
+ - Chat Message prefab no longer uses separate Sender Name and Message text components. Using rich text the channel color is assigned to the name, and message is appended after that.
+   - This also allows long names and messages to display in a more fluid nature
+ - Ensures latest chat message is displayed when scrolling occurs.
+ - Add option to prevent showing chat on message received in case you want user to always have to manually open chat
+ - Input Placeholder informs user which channel they will be typing to. 
+	- Note that an upgrade to 5.4 will be required for best results. There is an undesirable effect of clearing the placeholder text when user selects inputfield, so they cannot read this placeholder
+ - More advanced feature: Give some samples + framework for optional performance improvements (do not always search for players, instead cache them locally)
